@@ -39,6 +39,7 @@ public class Book_controller {
 	@ExceptionHandler
 	public void sss(Exception e) {
 		e.printStackTrace();
+		System.out.println("111111");
 	}
 	
 	@RequestMapping("sss")
