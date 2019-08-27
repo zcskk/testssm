@@ -37,9 +37,16 @@
 
   <servlet-mapping>
     <servlet-name>dispatcherServlet</servlet-name>
-    <url-pattern>*.action</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
-  
+  <filter>
+    <filter-name>iniShiroFilter</filter-name>
+    <filter-class>org.apache.shiro.web.servlet.IniShiroFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>iniShiroFilter</filter-name>
+    <url-pattern>*.action</url-pattern>
+</filter-mapping>
   
   
 </web-app>

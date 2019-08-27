@@ -42,7 +42,7 @@ public class Book_controller {
 		System.out.println("111111");
 	}
 	
-	@RequestMapping("sss")
+	@RequestMapping("login1")
 	public @ResponseBody String aaa(@RequestParam("file") CommonsMultipartFile file,HttpServletRequest req )throws Exception {
 		String oname=file.getOriginalFilename();
 		String ex=oname.substring(oname.lastIndexOf("."),oname.length());
